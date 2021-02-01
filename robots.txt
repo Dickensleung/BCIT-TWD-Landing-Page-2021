@@ -1,0 +1,8 @@
+#construction.html is blocked because this is a "coming soon" page
+#javascript game is blocked because the game is broken for now ... 
+
+user-agent: *
+Crawl-delay:10
+
+disallow: /cgi-bin 
+disallow: /project/blackjack-javascript-game-project.html
