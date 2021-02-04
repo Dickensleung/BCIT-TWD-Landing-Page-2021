@@ -1,11 +1,7 @@
-.text{
-    margin-top: 25%;
-    margin-left: 19%;
-}
 
 .text h1{
     color: #D79922;
-    font-size: 3rem;
+    font-size: 2.8rem;
     cursor: context-menu;
 }
 

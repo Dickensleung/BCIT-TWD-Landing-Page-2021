@@ -20,7 +20,7 @@ body{
 
 header{
     display: block;
-    height: 32vh;
+    height: 39vh;
     justify-content: space-between;
     padding: 0;
 }
@@ -47,6 +47,10 @@ footer p{
     visibility: hidden;
 }
 
+.section-container, .about-me, .text{
+    display: none;
+}
+
 li{
     list-style: none;
 }
@@ -61,33 +65,94 @@ li a{
 
 @media only screen and (min-device-width: 320px){
      /* smartphones, iPhone, portrait 480x320 phones */
+     .text{
+         display: flex;
+         flex-direction: column;
+     }
      
+     .text p{
+        letter-spacing: 3px;
+        word-spacing: 10px;
+        font-size: .9rem;
+    }
+
+    .items-container{
+        position: relative;
+        display: contents;
+        width: 100%;
+        height: 900px;
+        background-color: #2b2b2b;
+    }
+
+    .home{
+        color: #F7F6F0;
+    }
+
+    .home,
+    .contact,
+    .about, 
+    .team, 
+    .projects,
+    .content {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    }
+
+    .mobile-cards{
+        display: inline-block;
+        font: 40px/80px alegreya Sans;
+        padding: 0 60px;
+        margin: 10px;
+        border-radius: 60px;
+        transform: scale3d(0.5, 0.5, 0.5);
+        transform-origin: top left;
+        background: rgba(43, 43, 43, 0.1);
+        transition: single-transition 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
 }
+
+
 @media only screen and (min-device-width: 481px){
     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
     .navbar{
-        visibility: hidden;
+        visibility: visible;
     }
-
-    
-
 
 
 }
 @media only screen and (min-device-width: 641px){
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+
+    .navbar{
+        visibility: hidden;
+    }
 }
 @media only screen and (min-device-width: 961px){
     /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    .navbar{
+        visibility: hidden;
+    }
 }
 
 @media only screen and (min-device-width: 1025px){
     /* big landscape tablets, laptops, and desktops */
+    .navbar{
+        visibility: hidden;
+    }
 
 }
+
+
 @media only screen and (min-device-width: 1281px){
     /* hi-res laptops and desktops */
 
+    .navbar{
+        visibility: hidden;
+    }
+/*
     .about-me{
         width: 700px;
         box-shadow: olivedrab;
@@ -150,7 +215,10 @@ li a{
     article a:hover::before{
         height: 100%;
     }
+    */
+    
 }
+
 
 
 
